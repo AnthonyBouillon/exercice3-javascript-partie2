@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 3</title>
+</head>
+<body>
+  <form>
+                                                                       <!-- onkeypress = dès que vous taper sur une touche -->
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" onkeypress="name2();" value="" id="nom" />
+  </form>
+  <script>
+  // J'appelle ma fonction
+    function name2(){
+      // Je récupère ma saisie avec l'id
+      document.getElementById("nom").value;
+      // Je lui demande de l'afficher
+      alert(document.getElementById("nom").value);
+    }
+
+  </script>
+</body>
+</html>
