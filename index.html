@@ -6,16 +6,16 @@
 </head>
 <body>
   <form>
-                                                                       <!-- onkeypress = dès que vous taper sur une touche -->
-    <label for="nom">Votre nom  : </label><input type="text" name="nom" onkeypress="name2();" value="" id="nom" />
+                                                                       <!-- onkeyup = dès que vous taper sur une touche -->
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" onkeyup="name2();" value="" id="nom" />
   </form>
   <script>
   // J'appelle ma fonction
     function name2(){
       // Je récupère ma saisie avec l'id
-      document.getElementById("nom").value;
+      var lettre = document.getElementById("nom").value;
       // Je lui demande de l'afficher
-      alert(document.getElementById("nom").value);
+      alert(lettre);
     }
 
   </script>
